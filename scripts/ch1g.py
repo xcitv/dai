@@ -40,7 +40,7 @@ print('#EXT-X-VERSION:3')
 print('#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000')
 print(banner)
 s = requests.Session()
-with open('../dailymotion_channel_info.txt') as f:
+with open('../ch1g.txt') as f:
     for line in f:
         line = line.strip()
         if not line or line.startswith('~~'):
