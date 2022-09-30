@@ -37,6 +37,15 @@ jobs:
           #cd scripts
           #python3 ch1g.py > ../ch1.m3u
           echo "m3u grabbed"
+          
+      - name: Main
+        run: |
+          pwd
+          chmod +x autorun_github1.sh
+          ./autorun_github1.sh
+          #cd scripts
+          #python3 ch2g.py > ../ch2.m3u
+          echo "m3u grabbed"
         
       - name: git add
         run: |
