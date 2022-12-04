@@ -32,7 +32,7 @@ def grab(line):
 print('#EXTM3U')
 print(banner)
 s = requests.Session()
-with open('../dailymotion_channel_info.txt') as f:
+with open('../ch2g.txt') as f:
     for line in f:
         line = line.strip()
         if not line or line.startswith('~~'):
