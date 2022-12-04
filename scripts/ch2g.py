@@ -6,12 +6,6 @@ import sys
 
 proxies = {}
 if len(sys.argv) == 2:
-    proxies = {
-                'http' : sys.argv[1],
-                'https' : sys.argv[1]
-              }
-
-na = 'https://github.com/Xcpro24/chl/blob/main/assets/Eror404.mp4?raw=true'
 def grab(line):
     try:
         _id = line.split('/')[4]
@@ -36,10 +30,9 @@ def grab(line):
         print(m3u)
 
 print('#EXTM3U')
-print('#EXT-X-VERSION:3')
-print('#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000')
+print(banner)
 s = requests.Session()
-with open('../ch2g.txt') as f:
+with open('../dailymotion_channel_info.txt') as f:
     for line in f:
         line = line.strip()
         if not line or line.startswith('~~'):
@@ -50,6 +43,8 @@ with open('../ch2g.txt') as f:
             grp_title = line[1].strip().title()
             tvg_logo = line[2].strip()
             tvg_id = line[3].strip()
+            print(f'\n#EXTINF:-1 group-title="{grp_title}" tvg-logo="{tvg_logo}" tvg-id="{tvg_id}", {ch_name}')
         else:
             grab(line)
+        
         
