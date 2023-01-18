@@ -11,7 +11,7 @@ if len(sys.argv) == 2:
                 'https' : sys.argv[1]
               }
 
-na = 'https://raw.githubusercontent.com/benmoose39/YouTube_to_m3u/main/assets/moose_na.m3u'
+na = 'https://github.com/Xcpro24/chl/blob/main/assets/Eror404.mp4?raw=true'
 def grab(line):
     try:
         _id = line.split('/')[4]
@@ -50,7 +50,5 @@ with open('../ch1g.txt') as f:
             grp_title = line[1].strip().title()
             tvg_logo = line[2].strip()
             tvg_id = line[3].strip()
-            print(f'\n#EXTINF:-1 group-title="{grp_title}" tvg-logo="{tvg_logo}" tvg-id="{tvg_id}", {ch_name}')
         else:
             grab(line)
-        
