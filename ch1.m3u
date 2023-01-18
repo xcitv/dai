@@ -1,6 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
-
-#EXTINF:-1 group-title="" tvg-logo="" tvg-id="", ch
-https://stream-03.nyc.dailymotion.com/sec(hq_e0q5VHX_FvDCk_Uz4G_RLyx4Kf6rp99GyTg3TT0X23SDtIZGdIHgD3syft8lR)/dm/3/x6p1gw7/d/live-3.m3u8#cell=lnyc
+https://stream-04.sv4.dailymotion.com/sec(hq_e0q5VHX_FvDCk_Uz4G_RLyx4Kf6rp99GyTg3TT0X23SDtIZGdIHgD3syft8lR)/dm/3/x6p1gw7/d/live-3.m3u8#cell=lsv4
