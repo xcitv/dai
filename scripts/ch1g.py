@@ -11,7 +11,7 @@ if len(sys.argv) == 2:
                 'https' : sys.argv[1]
               }
 
-na = 'https://iptvok.my.id/exp/Eror404.mp4'
+na = 'https://iptvok.my.id/exp/vid.m3u8'
 def grab(line):
     try:
         _id = line.split('/')[4]
